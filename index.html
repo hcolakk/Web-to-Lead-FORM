@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-  </head>
+<head>
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+</head>
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box}
@@ -75,6 +75,7 @@ button:hover {
 }
 </style>
 <body>
+
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
 <!--  If necessary, please modify the charset parameter to specify the        -->
@@ -82,10 +83,6 @@ button:hover {
 <!--  ----------------------------------------------------------------------  -->
 
 
-<script src="https://www.google.com/recaptcha/api.js"></script>
-<script>
- function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
-</script>
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
@@ -93,8 +90,7 @@ button:hover {
 
 <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
-<input type=hidden name='captcha_settings' value='{"keyname":"myrecapctha","fallback":"true","orgId":"00D3t000004mbfq","ts":""}'>
-<input type=hidden name="oid" value="00D3t000004mbfq">
+<input type=hidden name="oid" value="00D4w000000OqoE">
 <input type=hidden name="retURL" value="http://www.youtube.com">
 
 <!--  ----------------------------------------------------------------------  -->
@@ -114,10 +110,10 @@ button:hover {
 
 <label for="country">Country</label><input  id="country" maxlength="40" name="country" size="20" type="text" /><br>
 
-<div class="g-recaptcha" data-sitekey="6LeVy8siAAAAAKrynjZSzxSiL8S1J5A64vJLb_lQ"></div><br>
 <input type="submit" name="submit">
 
 </form>
+
 
 </body>
 </html>
